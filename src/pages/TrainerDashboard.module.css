@@ -1,0 +1,591 @@
+/* TrainerDashboard.module.css */
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-20);
+}
+
+.plan-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: var(--space-16);
+}
+
+.plan-header h3 {
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.plan-meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.difficulty-badge {
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+}
+
+.difficulty-beginner {
+  background: rgba(var(--color-success-rgb), 0.1);
+  color: var(--color-success);
+}
+
+.difficulty-intermediate {
+  background: rgba(var(--color-warning-rgb), 0.1);
+  color: var(--color-warning);
+}
+
+.difficulty-advanced {
+  background: rgba(var(--color-error-rgb), 0.1);
+  color: var(--color-error);
+}
+
+.plan-exercises {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-exercises li {
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.plan-exercises li:last-child {
+  border-bottom: none;
+}
+
+.form-container {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-32);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-container h2 {
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.input {
+  width: 100%;
+  margin-bottom: var(--space-12);
+  padding: var(--space-12);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: rgba(75, 85, 99, 0.2); /* darker indigo-tinted */
+  color: var(--color-text);
+  appearance: none; /* removes native arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.button {
+  background-color: indigo;
+  color: white;
+  padding: var(--space-12) var(--space-24);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4f46e5;
+}
+
+.deleteButton {
+  margin-top: var(--space-16);
+  background-color: crimson;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dashboard {
+  padding: 24px;
+  background-color: #10151f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logoutButton {
+  padding: 10px 16px;
+  background-color: #2db57a;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profileSection {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.uploadLabel {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.profileImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #21808d;
+}
+
+.placeholderImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #1e2a38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.planCard {
+  background: #1a2232;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #2f3b4d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.planHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.planHeader h3 {
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.planMeta {
+  font-size: 14px;
+  color: #9ba3b0;
+}
+
+.difficultyBadge {
+  padding: 4px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.difficultyBeginner {
+  background: rgba(45, 181, 122, 0.1);
+  color: #2db57a;
+}
+
+.difficultyIntermediate {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.difficultyAdvanced {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+}
+
+.planExercises {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.planExercises li {
+  padding: 8px 0;
+  border-bottom: 1px solid #2f3b4d;
+  font-size: 14px;
+  color: #9ba3b0;
+}
+
+.planExercises li:last-child {
+  border-bottom: none;
+}
+
+.deleteButton {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboardWrapper {
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #f0f0f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profilePic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4f46e5;
+}
+
+.formSection {
+  background: #2a2a40;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.formSection input,
+.formSection textarea,
+.formSection select {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #3a3a55;
+  color: white;
+}
+
+.formSection button {
+  padding: 0.75rem 1.25rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.planCard {
+  background: #2a2a40;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.planHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.planMeta {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.planExercises {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.planExercises li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.reportsSection {
+  margin-top: 3rem;
+}
+
+.summaryStats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: #2a2a40;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+.chartBox {
+  background: #2a2a40;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.container {
+  padding: 2rem;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.editBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  padding: 2rem;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.editBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #2a2a40;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #f0f0f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.cardContent {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a3a55;
+  color: white;
+}
+
+.addBtn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.deleteBtn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #22155c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cardHeader {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent {
+  color: #555;
+}

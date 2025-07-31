@@ -1,0 +1,21 @@
+[debug] [2025-07-12T21:14:26.171Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T21:14:26.175Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shari\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-07-12T21:14:26.175Z] CLI Version:   14.10.1
+[debug] [2025-07-12T21:14:26.175Z] Platform:      win32
+[debug] [2025-07-12T21:14:26.175Z] Node Version:  v22.17.0
+[debug] [2025-07-12T21:14:26.175Z] Time:          Sun Jul 13 2025 05:14:26 GMT+0800 (Singapore Standard Time)
+[debug] [2025-07-12T21:14:26.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T21:14:26.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T21:14:26.187Z] > authorizing via signed-in user (sharifsharifai04@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\shari\fitforge-app\fitforge-app\fitforge-app\frontend
+
